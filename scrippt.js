@@ -12,52 +12,137 @@ window.addEventListener('scroll', (event) =>
 {
     var scrollToY = this.scrollY;
     console.log(scrollToY);
-    for(i=0; i<=5;i++)
+    console.log(window.innerWidth);
+    if(window.innerWidth >= 1024)
     {
-        if(scrollToY >= 1504 && i == 4)
+        for(i=0; i<=5;i++)
         {
-            if(scrollToY == 1411){moveall();}
-            menus[i].style.color = "#E11C2A";
-            menus[i].style.borderBottom= "2px solid #E11C2A";
-            menus[i].style.fontWeight = "bolder";
-        }
-        else if(scrollToY >= 1085 && scrollToY < 1503 && scrollToY <= 1195 && i == 3)
-        {
-            // if(scrollToY == 1085 || scrollToY == 1499){moveall();}
-            menus[i].style.color = "#E11C2A";
-            menus[i].style.borderBottom= "2px solid #E11C2A";
-            menus[i].style.fontWeight = "bolder";
-            moveall();
-        }
-        else if(scrollToY >= 816 && scrollToY < 1085 && i == 2)
-        {
-            menus[i].style.color = "#E11C2A";
-            menus[i].style.borderBottom= "2px solid #E11C2A";
-            menus[i].style.fontWeight = "bolder";
-            document.getElementById('msgcaption').innerText = ""
-        }
-        else if(scrollToY >= 562 && scrollToY < 816 && i == 1)
-        {
-            menus[i].style.color = "#E11C2A";
-            menus[i].style.borderBottom= "2px solid #E11C2A";
-            menus[i].style.fontWeight = "bolder";
-            document.getElementById('msgcaption').innerText = ""
-        }
-        else if(scrollToY >= 0 && scrollToY < 562 && i == 0)
-        {
-            menus[i].style.color = "#E11C2A";
-            menus[i].style.borderBottom= "2px solid #E11C2A";
-            menus[i].style.fontWeight = "bolder";
-            document.getElementById('msgcaption').innerText = ""
-        }
-        else
-        {
-            menus[i].style.color = "#ffffff";
-            menus[i].style.borderBottom= "none";
-            menus[i].style.fontWeight = "bolder";
-            document.getElementById('msgcaption').innerText = ""
+            if(scrollToY >= 1761 && i == 4)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 1242 && scrollToY < 1761 && i == 3)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 926 && scrollToY < 1242 && i == 2)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 560 && scrollToY < 926 && i == 1)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 0 && scrollToY < 560 && i == 0)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else
+            {
+                menus[i].style.color = "#ffffff";
+                menus[i].style.borderBottom= "none";
+                menus[i].style.fontWeight = "bolder";
+                document.getElementById('msgcaption').innerText = ""
+            }
         }
     }
+    else if(window.innerWidth > 767 && window.innerWidth <= 1023)
+    {
+        for(i=0; i<=5;i++)
+        {
+            if(scrollToY >= 1789 && i == 4)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 1272 && scrollToY < 1789 && i == 3)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 963 && scrollToY < 1272 && i == 2)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 630 && scrollToY < 963 && i == 1)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 0 && scrollToY < 630 && i == 0)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else
+            {
+                menus[i].style.color = "#ffffff";
+                menus[i].style.borderBottom= "none";
+                menus[i].style.fontWeight = "bolder";
+                document.getElementById('msgcaption').innerText = ""
+            }
+        }
+    }
+    else if(window.innerWidth <= 767)
+    {
+        for(i=0; i<=5;i++)
+        {
+            if(scrollToY >= 1810 && i == 4)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 1327 && scrollToY < 1810 && i == 3)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 1038 && scrollToY < 1327 && i == 2)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 590 && scrollToY < 1038 && i == 1)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else if(scrollToY >= 0 && scrollToY < 590 && i == 0)
+            {
+                menus[i].style.color = "#E11C2A";
+                menus[i].style.borderBottom= "2px solid #E11C2A";
+                menus[i].style.fontWeight = "bolder";
+            }
+            else
+            {
+                menus[i].style.color = "#ffffff";
+                menus[i].style.borderBottom= "none";
+                menus[i].style.fontWeight = "bolder";
+                document.getElementById('msgcaption').innerText = ""
+            }
+        }
+    }
+    
 });
 document.querySelectorAll('.options a').forEach(function(pageSeclect){
     pageSeclect.addEventListener('click', function(){
