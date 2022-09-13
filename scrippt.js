@@ -28,7 +28,9 @@ window.addEventListener('scroll', (event) =>
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
-                moveall()
+                if(scrollToY >= 1264 && scrollToY < 1653 && i == 3){moveall()}
+
+                
             }
             else if(scrollToY >= 926 && scrollToY < 1242 && i == 2)
             {
@@ -72,7 +74,8 @@ window.addEventListener('scroll', (event) =>
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
-                moveall()
+                if(scrollToY >= 1264 && scrollToY < 1653 && i == 3){moveall()}
+
             }
             else if(scrollToY >= 963 && scrollToY < 1272 && i == 2)
             {
@@ -105,26 +108,27 @@ window.addEventListener('scroll', (event) =>
     {
         for(i=0; i<=5;i++)
         {
-            if(scrollToY >= 1810 && i == 4)
+            if(scrollToY >= 1747 && i == 4)
             {
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
             }
-            else if(scrollToY >= 1327 && scrollToY < 1810 && i == 3)
+            else if(scrollToY >= 1264 && scrollToY < 1747 && i == 3)
             {
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
-                moveall()
+                if(scrollToY >= 1264 && scrollToY < 1653 && i == 3){moveall()}
+                
             }
-            else if(scrollToY >= 1038 && scrollToY < 1327 && i == 2)
+            else if(scrollToY >= 975 && scrollToY < 1264 && i == 2)
             {
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
             }
-            else if(scrollToY >= 590 && scrollToY < 1038 && i == 1)
+            else if(scrollToY >= 590 && scrollToY < 955 && i == 1)
             {
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
