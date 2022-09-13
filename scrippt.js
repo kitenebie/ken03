@@ -28,6 +28,7 @@ window.addEventListener('scroll', (event) =>
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
+                moveall()
             }
             else if(scrollToY >= 926 && scrollToY < 1242 && i == 2)
             {
@@ -71,6 +72,7 @@ window.addEventListener('scroll', (event) =>
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
+                moveall()
             }
             else if(scrollToY >= 963 && scrollToY < 1272 && i == 2)
             {
@@ -114,6 +116,7 @@ window.addEventListener('scroll', (event) =>
                 menus[i].style.color = "#E11C2A";
                 menus[i].style.borderBottom= "2px solid #E11C2A";
                 menus[i].style.fontWeight = "bolder";
+                moveall()
             }
             else if(scrollToY >= 1038 && scrollToY < 1327 && i == 2)
             {
